@@ -6,9 +6,16 @@ import { defineConfig } from "astro/config";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-theme-mia.pages.dev",
+  image: {
+  experimentalLayout: 'responsive',
+   },
+experimental: {
+  responsiveImages: true,
+},
+  site: "https://mia.paulapplegate.com",
   trailingSlash: "never",
   prefetch: {
     prefetchAll: true,
